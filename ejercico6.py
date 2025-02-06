@@ -32,3 +32,10 @@ def contar_palabras(cadena: str) -> int:
     return len(cadena.split())
 
 print(contar_palabras("Hola mundo desde Python"))
+
+# 6
+def maximo_minimo(numeros: str) -> str:
+    lista_numeros = list(map(int, numeros.split()))
+    return f"{max(lista_numeros)} {min(lista_numeros)}"
+
+print(maximo_minimo("3 1 4 1 5 9"))  # r
