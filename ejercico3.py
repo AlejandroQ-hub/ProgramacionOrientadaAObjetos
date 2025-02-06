@@ -26,3 +26,9 @@ def invertir_lista(numeros: str) -> str:
     return ' '.join(numeros.split()[::-1])
 
 print(invertir_lista("1 2 3 4 5"))  # respuesta: 5 4 3 2 1
+
+# 5
+def contar_palabras(cadena: str) -> int:
+    return len(cadena.split())
+
+print(contar_palabras("Hola mundo desde Python"))
