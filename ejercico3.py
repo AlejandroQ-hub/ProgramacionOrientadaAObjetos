@@ -13,3 +13,10 @@ def contar_vocales(cadena: str) -> int:
 
 
 print(contar_vocales("Hola Mundo"))  # respuesta: 4
+
+# 3
+def es_palindromo(cadena: str) -> str:
+    cadena_limpia = ''.join(c for c in cadena.lower() if c.isalnum())
+    return "Si" if cadena_limpia == cadena_limpia[::-1] else "No"
+
+print(es_palindromo("anita lava la tina"))  # Respuesta: Si
