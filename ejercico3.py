@@ -20,3 +20,9 @@ def es_palindromo(cadena: str) -> str:
     return "Si" if cadena_limpia == cadena_limpia[::-1] else "No"
 
 print(es_palindromo("anita lava la tina"))  # Respuesta: Si
+
+# 4
+def invertir_lista(numeros: str) -> str:
+    return ' '.join(numeros.split()[::-1])
+
+print(invertir_lista("1 2 3 4 5"))  # respuesta: 5 4 3 2 1
